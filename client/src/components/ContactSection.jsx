@@ -9,7 +9,7 @@ import emailjs from 'emailjs-com';
 export const ContactSection = ({ toggleNavbar }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
-  
+
     emailjs
       .sendForm(
         'service_n9ike5f', // Replace with your EmailJS service ID
@@ -77,6 +77,7 @@ export const ContactSection = ({ toggleNavbar }) => {
               required
               className="w-full px-4 py-2 mt-2 bg-[rgb(18,18,18)] text-white border border-gray-900 rounded-lg focus:outline-none focus:border-[#136f5f]"
             />
+
           </div>
 
           <div>
