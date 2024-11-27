@@ -1,0 +1,23 @@
+/* Import Google Fonts first */
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap');
+
+@font-face {
+  font-family: 'Hargita';
+  src: url('/fonts/Hargita.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+/* Tailwind directives should follow */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+html {
+    scroll-behavior: smooth;
+  }
