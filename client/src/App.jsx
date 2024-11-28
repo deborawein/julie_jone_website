@@ -1,8 +1,8 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Navbar } from './components/navbar/Navbar';
 import { AnimatePresence } from 'framer-motion';
-import { HomeSection } from './components/homeSection';
-import { BioSection } from './components/bioSection';
+import { HomeSection } from './components/HomeSection';
+import { BioSection } from './components/BioSection';
 import { MixesSection } from './components/MixesSection';
 import { GigsSection } from './components/GigsSection';
 import { ContactSection } from './components/ContactSection';
