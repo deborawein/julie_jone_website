@@ -10,11 +10,11 @@ export const HomeSection = () => {
     >
         <Header />
         {/* Left 50% container with centered logo */}
-        <div className="absolute left-0 top-[75%] transform -translate-y-1/2 flex justify-center items-center w-full md:w-1/2 md:top-1/2 ">
+        <div className="absolute w-1/2 left-0 top-1/2 transform -translate-y-1/2 flex justify-center items-center ">
           <img
             src="/src/assets/jj-logo-white.png"
             alt="JJ Logo"
-            className="aspect-square h-[0px] xl:h-[350px] object-contain" // Adjust sizes for mobile
+            className="aspect-square h-[0px] xl:h-[350px] object-contain bg-parallax" // Adjust sizes for mobile
           />
         </div>
     </section>

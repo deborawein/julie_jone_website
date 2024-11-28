@@ -3,7 +3,7 @@ import { MenuButton } from './navbar/MenuButton';
 import { CustomButton } from './CustomButton';
 import { FaFacebookF, FaSoundcloud, FaInstagram, FaYoutube } from 'react-icons/fa';
 import { Footer } from './footer/Footer';
-import { BsChevronCompactRight } from 'react-icons/bs';
+import { SectionHeader } from './header/SectionHeader';
 import emailjs from 'emailjs-com';
 
 export const ContactSection = ({ toggleNavbar }) => {
@@ -28,17 +28,17 @@ export const ContactSection = ({ toggleNavbar }) => {
         }
       );
   };
+
   return (
     <section
       id="CONTACT"
       className="h-screen snap-center bg-[rgb(18,18,18)] text-gray-300 relative py-16 flex flex-col items-center justify-center"
     >
-      <MenuButton onClick={toggleNavbar} />
-
-      {/* CONTACT Text in Top Right Corner */}
-      <div className="absolute top-8 right-[70px] text-3xl font-light text-orange-neon">
-        CONTACT <span className='text-green-deep'>/</span>
+      {/* Section Header */}
+      <div className="absolute top-0 left-0 w-full z-30">
+        <SectionHeader toggleNavbar={toggleNavbar} title="CONTACT" />
       </div>
+
 
       {/* Main Content with a border and background image */}
       <div
@@ -52,7 +52,6 @@ export const ContactSection = ({ toggleNavbar }) => {
       >
         {/* Left Column (Form) */}
         <form onSubmit={handleSubmit} className="w-full md:w-[40%] bg-black p-8 rounded-l-xl shadow-lg space-y-6 flex-1">
-
           <div>
             <label className="text-left text-lg font-light text-white" htmlFor="name">
               NAME
@@ -77,7 +76,6 @@ export const ContactSection = ({ toggleNavbar }) => {
               required
               className="w-full px-4 py-2 mt-2 bg-[rgb(18,18,18)] text-white border border-gray-900 rounded-lg focus:outline-none focus:border-[#136f5f]"
             />
-
           </div>
 
           <div>
@@ -94,7 +92,7 @@ export const ContactSection = ({ toggleNavbar }) => {
           </div>
 
           <div className="text-center">
-            <CustomButton type='submit' title='SEND' />
+            <CustomButton type="submit" title="SEND" />
           </div>
         </form>
 

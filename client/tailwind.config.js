@@ -6,6 +6,9 @@ export default {
   ],
   theme: {
     extend: {
+      backgroundAttachment: {
+        parallax: 'fixed',
+      },
       fontFamily: {
         jost: ['Jost', 'sans-serif'],
         montserrat: ['Montserrat', 'sans-serif'],
@@ -22,5 +25,5 @@ export default {
   plugins: [
     require('@tailwindcss/line-clamp'),
     require('@tailwindcss/aspect-ratio'),
-    ],
+  ],
 };

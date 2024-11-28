@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import { MenuButton } from './navbar/MenuButton';
 import { CustomButton } from './CustomButton';
+import { SectionHeader } from './header/SectionHeader';
 
 export const BioSection = ({ toggleNavbar }) => {
-  const [expanded, setExpanded] = useState(false); // State to control text expansion
+  const [expanded, setExpanded] = useState(false);
 
   const fullText = [
     "Julie Jones is a rising Italian-Eritrean artist whose music fuses percussion and deep beats with ethnic and ancestral sounds and soundscapes.",
@@ -13,35 +13,30 @@ export const BioSection = ({ toggleNavbar }) => {
     "Julie's ultimate aspiration is to take her audience on a mystical journey to her homeland, Africa, inviting them to experience the essence of her cultural roots through the immersive power of her music."
   ];
 
-  const maxParagraphs = 2; // Number of paragraphs to show when collapsed
+  const maxParagraphs = 2;
   const displayText = expanded ? fullText : fullText.slice(0, maxParagraphs);
 
   return (
     <section
       id="BIO"
-      className="h-screen snap-center bg-[rgb(18,18,18)] text-gray-300 relative py-16 flex flex-col justify-center items-center"
+      className="h-screen w-full snap-center relative bg-[rgb(18,18,18)]"
     >
-      <MenuButton onClick={toggleNavbar} />
+      {/* Section Header */}
+      <SectionHeader toggleNavbar={toggleNavbar} title="BIO" />
 
-      {/* BIO Text in Top Right Corner */}
-      <div className="absolute top-8 right-[70px] text-3xl font-light text-orange-neon">
-        BIO <span className="text-green-deep">/</span>
-      </div>
-
-      <div className="container mx-auto px-4 flex flex-col items-center text-center">
-        {/* Bio Content */}
-        <div className="flex flex-col items-center justify-center gap-8 md:flex-row md:gap-16">
-          {/* Profile Image with Background Border */}
+      {/* Bio Content */}
+      <div className="flex h-[calc(100%-70px)] items-center justify-center">
+        <div className="container mx-auto px-4 flex flex-col md:flex-row items-center justify-center gap-8 md:gap-16">
+          {/* Left Column: Profile Image with Background Border */}
           <div
-            className="relative w-[200px] h-[200px] rounded-full overflow-hidden md:w-[600px] md:h-[600px]"
+            className="relative flex items-center justify-center w-[220px] h-[220px] md:w-[450px] md:h-[450px] lg:w-[600px] lg:h-[600px] rounded-full"
             style={{
               backgroundImage: 'url("/src/assets/profile-border-bg.jpg")',
               backgroundSize: 'cover',
               backgroundPosition: 'center',
-              padding: '30px',
             }}
           >
-            <div className="w-full h-full rounded-full overflow-hidden">
+            <div className="w-[90%] h-[90%] rounded-full overflow-hidden">
               <img
                 src="/src/assets/jj-bio.jpg"
                 className="object-cover w-full h-full rounded-full"
@@ -51,8 +46,8 @@ export const BioSection = ({ toggleNavbar }) => {
             </div>
           </div>
 
-          {/* Bio Text */}
-          <div className="text-center max-w-lg space-y-4 md:text-left">
+          {/* Right Column: Bio Text */}
+          <div className="flex-1 text-center md:text-left space-y-6 max-w-lg">
             <h2 className="text-3xl text-white">
               I am{' '}
               <span className="text-[82px] text-white font-hargita">
@@ -62,13 +57,15 @@ export const BioSection = ({ toggleNavbar }) => {
             {/* Dynamic Text Content */}
             <div>
               {displayText.map((paragraph, index) => (
-                <p key={index} className="text-lg py-2">{paragraph}</p>
+                <p key={index} className="text-lg text-gray-300">
+                  {paragraph}
+                </p>
               ))}
             </div>
             {/* Toggle Button */}
             <CustomButton
               title={expanded ? 'SHOW LESS' : 'READ MORE'}
-              onClick={() => setExpanded(!expanded)} // Toggle expanded state
+              onClick={() => setExpanded(!expanded)}
             />
           </div>
         </div>

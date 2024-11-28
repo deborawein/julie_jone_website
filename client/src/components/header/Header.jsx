@@ -21,19 +21,20 @@ export const Header = () => {
       </motion.div>
 
       {/* Navigation items */}
-      <motion.nav className="flex flex-1 items-center justify-end gap-4 text-md md:text-xl md:gap-14 lg:text-3xl lg:gap-24 xl:justify-center ">
-        {items.map((item) => (
-          <motion.a
-            whileHover={{ scale: 1.1, color: '#f57925' }}
-            whileTap={{ scale: 0.95 }}
-            href={`#${item}`}
-            key={item}
-            className="cursor-pointer text-gray-300 font-light"
-          >
-            {item}
-          </motion.a>
-        ))}
-      </motion.nav>
+      <motion.nav className="flex flex-1 items-center justify-end gap-4 text-sm sm:text-md md:text-lg lg:text-xl xl:gap-20 xl:justify-center">
+  {items.map((item) => (
+    <motion.a
+      whileHover={{ scale: 1.1, color: '#f57925' }}
+      whileTap={{ scale: 0.95 }}
+      href={`#${item}`}
+      key={item}
+      className="cursor-pointer text-gray-300 font-light"
+    >
+      {item}
+    </motion.a>
+  ))}
+</motion.nav>
+
     </motion.div>
   );
 };

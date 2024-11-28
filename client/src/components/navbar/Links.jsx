@@ -5,7 +5,7 @@ export const Links = () => {
   const items = ['HOME', 'BIO', 'MIXES', 'GIGS', 'CONTACT'];
 
   return (
-    <motion.div className="w-full flex flex-row items-center justify-center gap-[50px] text-[30px] font-light text-green-deep">
+    <motion.div className="w-full flex flex-row items-center justify-center gap-20 text-xl font-light text-green-deep">
       {items.map((item) => (
         <motion.a
           whileHover={{ fontWeight: 300, scale: 1.2, color: '#f57925' }}
