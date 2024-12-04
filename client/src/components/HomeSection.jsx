@@ -28,7 +28,7 @@ export const HomeSection = () => {
         className="absolute w-1/2 left-0 top-1/2 transform -translate-y-1/2 flex justify-center items-center"
       >
         <img
-          src="/images/jj-logo-white.png"
+          src="public/images/jj-logo-white.png"
           alt="JJ Logo"
           className="aspect-square h-0 xl:h-[350px] object-contain"
         />
