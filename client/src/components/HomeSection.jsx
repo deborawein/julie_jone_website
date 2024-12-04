@@ -1,23 +1,38 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Header } from './header/Header';
 
 export const HomeSection = () => {
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollY = window.scrollY;
+      const parallaxLogo = document.querySelector('.parallax-logo');
+      if (parallaxLogo) {
+        parallaxLogo.style.transform = `translateY(${scrollY * 0.2}px)`;
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
     <section
       id="HOME"
-      className="h-full w-full snap-center bg-cover bg-center relative"
-      style={{ backgroundImage: "url('/src/assets/jj-home.jpg')" }} // Path to your background image
+      className="h-screen w-full snap-center bg-cover bg-center relative overflow-hidden"
+      style={{ backgroundImage: "url('/src/assets/jj-home.jpg')" }}
     >
-        <Header />
-        {/* Left 50% container with centered logo */}
-        <div className="absolute w-1/2 left-0 top-1/2 transform -translate-y-1/2 flex justify-center items-center ">
-          <img
-            src="/src/assets/jj-logo-white.png"
-            alt="JJ Logo"
-            className="aspect-square h-[0px] xl:h-[350px] object-contain bg-parallax" // Adjust sizes for mobile
-          />
-        </div>
+      <Header />
+      {/* Left 50% container with centered logo */}
+      <div
+        className="absolute w-1/2 left-0 top-1/2 transform -translate-y-1/2 flex justify-center items-center"
+      >
+        <img
+          src="/src/assets/jj-logo-white.png"
+          alt="JJ Logo"
+          className="aspect-square h-0 xl:h-[350px] object-contain"
+        />
+      </div>
     </section>
   );
 };
- 

@@ -51,9 +51,9 @@ export const ContactSection = ({ toggleNavbar }) => {
         }}
       >
         {/* Left Column (Form) */}
-        <form onSubmit={handleSubmit} className="w-full md:w-[40%] bg-black p-8 rounded-l-xl shadow-lg space-y-6 flex-1">
+        <form onSubmit={handleSubmit} className="w-full md:w-[40%] bg-black p-8 rounded-t-xl md:rounded-l-xl shadow-lg space-y-6 flex-1">
           <div>
-            <label className="text-left text-lg font-light text-white" htmlFor="name">
+            <label className="text-left text-sm md:text-lg font-light text-white" htmlFor="name">
               NAME
             </label>
             <input
@@ -66,7 +66,7 @@ export const ContactSection = ({ toggleNavbar }) => {
           </div>
 
           <div>
-            <label className="text-left text-lg font-light text-white" htmlFor="email">
+          <label className="text-left text-sm md:text-lg font-light text-white" htmlFor="email">
               EMAIL
             </label>
             <input
@@ -79,7 +79,7 @@ export const ContactSection = ({ toggleNavbar }) => {
           </div>
 
           <div>
-            <label className="text-left text-lg font-light text-white" htmlFor="message">
+          <label className="text-left text-sm md:text-lg font-light text-white" htmlFor="message">
               MESSAGE
             </label>
             <textarea
@@ -97,41 +97,34 @@ export const ContactSection = ({ toggleNavbar }) => {
         </form>
 
         {/* Right Column (Contact Info) */}
-        <div className="w-full md:w-[40%] text-center md:text-left mt-6 md:mt-0 flex flex-col items-center justify-center flex-1 bg-black">
-          {/* Image above the "GET IN TOUCH" text */}
-          <div className="mb-6 flex flex-row gap-2 items-center justify-center">
-            <h2 className="text-[72px] md:text-[140px] text-white font-hargita">JULIE JONES</h2>
+        <div className="w-full text-center flex flex-col items-center justify-center flex-1 bg-black pb-4 rounded-b-xl md:rounded-r-xl">
+          <div className="flex-row items-center justify-center">
+            <h2 className="text-[42px] sm:text-[72px] md:text-[100px] xl:text-[140px] text-white font-hargita">JULIE JONES</h2>
           </div>
-
-          <div className="text-white flex flex-col items-center justify-center">
-            <div className="mt-4 font-light flex flex-col items-center justify-center">
-              <p>Melbourne, VIC</p>
-              <p>giuliasantoni.au@gmail.com</p>
-            </div>
-
+              <p className='text-sm md:text-lg '>Melbourne, VIC</p>
+              <p className='text-sm'>giuliasantoni.au@gmail.com</p>
             {/* Social Media Icons */}
-            <div className="flex justify-center items-center space-x-6 mt-6">
+            <div className="flex justify-center items-center space-x-6 mt-4">
               <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
-                <div className="w-14 h-14 bg-green-deep rounded-full flex items-center justify-center hover:bg-[#f57925] transition-all">
+                <div className="w-10 h-10 xl:w-14 xl:h-14 bg-green-deep rounded-full flex items-center justify-center hover:bg-[#f57925] transition-all">
                   <FaFacebookF className="w-6 h-6 text-white" />
                 </div>
               </a>
               <a href="https://soundcloud.com" target="_blank" rel="noopener noreferrer">
-                <div className="w-14 h-14 bg-green-deep rounded-full flex items-center justify-center hover:bg-[#f57925] transition-all">
-                  <FaSoundcloud className="w-6 h-6 text-white" />
+              <div className="w-10 h-10 xl:w-14 xl:h-14 bg-green-deep rounded-full flex items-center justify-center hover:bg-[#f57925] transition-all">
+              <FaSoundcloud className="w-6 h-6 text-white" />
                 </div>
               </a>
               <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-                <div className="w-14 h-14 bg-green-deep rounded-full flex items-center justify-center hover:bg-[#f57925] transition-all">
-                  <FaInstagram className="w-6 h-6 text-white" />
+              <div className="w-10 h-10 xl:w-14 xl:h-14 bg-green-deep rounded-full flex items-center justify-center hover:bg-[#f57925] transition-all">
+              <FaInstagram className="w-6 h-6 text-white" />
                 </div>
               </a>
               <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
-                <div className="w-14 h-14 bg-green-deep rounded-full flex items-center justify-center hover:bg-[#f57925] transition-all">
-                  <FaYoutube className="w-6 h-6 text-white" />
+              <div className="w-10 h-10 xl:w-14 xl:h-14 bg-green-deep rounded-full flex items-center justify-center hover:bg-[#f57925] transition-all">
+              <FaYoutube className="w-6 h-6 text-white" />
                 </div>
               </a>
-            </div>
           </div>
         </div>
       </div>

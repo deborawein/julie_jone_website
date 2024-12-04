@@ -11,12 +11,12 @@ export const Header = () => {
         <img
           src="/src/assets/julie-white.png"
           alt="JJ Logo"
-          className="aspect-square h-[30px] xl:h-[0] object-contain" // Adjust sizes for mobile
+          className="aspect-square h-[70px] xl:h-[0] object-contain" // Adjust sizes for mobile
         />
         <img
           src="/src/assets/jones-white.png"
           alt="JJ Logo"
-          className="aspect-square h-[30px] xl:h-[0] object-contain" // Adjust sizes for mobile
+          className="aspect-square h-[70px] xl:h-[0] object-contain" // Adjust sizes for mobile
         />
       </motion.div>
 

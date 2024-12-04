@@ -9,6 +9,12 @@ export default {
       backgroundAttachment: {
         parallax: 'fixed',
       },
+      perspective: {
+        1000: '1000px',
+      },
+      translate: {
+        'parallax-hover': '-20px',
+      },
       fontFamily: {
         jost: ['Jost', 'sans-serif'],
         montserrat: ['Montserrat', 'sans-serif'],
@@ -18,11 +24,10 @@ export default {
         'green-deep': '#136f5f',  // Modify the default 'primary' color
         'orange-neon': '#f57925', // Modify the default 'secondary' color
       },
-
     },
 
-  },
-  plugins: [
-    require('@tailwindcss/aspect-ratio'),
-  ],
-};
+      plugins: [
+        require('@tailwindcss/aspect-ratio'), // Add if you need aspect utilities
+      ]
+    },
+  }

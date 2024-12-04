@@ -52,10 +52,10 @@ export const GigsSection = ({ toggleNavbar }) => {
 
       {/* Main Content */}
       <div className="container mx-auto px-4 flex flex-col justify-end text-center md:text-left relative z-20 w-full h-full">
-        <h2 className="text-5xl text-white self-center font-bold mb-8 text-left w-full md:w-[70%]">
+        <h2 className="text-5xl text-white self-center font-bold mb-8 text-left w-full 2xl:w-[70%]">
           UPCOMING GIGS
         </h2>
-        <div className="space-y-8 self-center w-full md:w-[70%] mb-10">
+        <div className="space-y-8 self-center w-full 2xl:w-[70%] mb-10">
           {events.map((event) => (
             <EventCard
               key={event._id}
