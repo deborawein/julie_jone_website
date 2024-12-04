@@ -38,7 +38,7 @@ export const BioSection = ({ toggleNavbar }) => {
           >
             <div className="w-[90%] h-[90%] rounded-full overflow-hidden">
               <img
-                src="/src/assets/jj-bio.jpg"
+                src="/images/jj-bio.jpg"
                 className="object-cover w-full h-full rounded-full"
                 alt="Julie Jones Bio"
                 loading="lazy"

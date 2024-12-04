@@ -41,7 +41,7 @@ export const MixesSection = ({ toggleNavbar }) => {
           <div className="flex items-center justify-center self-center w-[300px] h-[300px] sm:w-[400px] sm:h-[400px] lg:w-[500px] lg:h-[500px] xl:w-[600px] xl:h-[600px]">
             <div className="w-[90%] h-[90%] rounded-full overflow-hidden">
               <video
-                src="/src/assets/jj-video.mp4"
+                src="/images/jj-video.mp4"
                 className="object-cover w-full h-full"
                 autoPlay
                 loop
