@@ -32,7 +32,7 @@ export default function App() {
   return (
     <div className='bg-black text-gray-300 font-jost h-screen overflow-y-scroll snap-y snap-mandatory'>
       {/* HOME Section */}
-      <HomeSection toggleNavbar={toggleNavbar} />
+      <HomeSection className='' toggleNavbar={toggleNavbar} />
 
       {/* BIO Section */}
       <BioSection toggleNavbar={toggleNavbar} />

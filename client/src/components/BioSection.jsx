@@ -19,17 +19,17 @@ export const BioSection = ({ toggleNavbar }) => {
   return (
     <section
       id="BIO"
-      className="h-screen w-full snap-center relative bg-[rgb(18,18,18)]"
+      className="h-screen w-full snap-start relative bg-[rgb(18,18,18)] flex flex-col"
     >
       {/* Section Header */}
       <SectionHeader toggleNavbar={toggleNavbar} title="BIO" />
 
-      {/* Bio Content */}
-      <div className="flex h-[calc(100%-70px)] items-center justify-center">
+      {/* Content Area */}
+      <div className="flex flex-1 items-center justify-center">
         <div className="container mx-auto px-4 flex flex-col md:flex-row items-center justify-center gap-8 md:gap-16">
-          {/* Left Column: Profile Image with Background Border */}
+          {/* Left Column: Profile Image */}
           <div
-            className="relative flex items-center justify-center w-[220px] h-[220px] md:w-[450px] md:h-[450px] lg:w-[600px] lg:h-[600px] rounded-full"
+            className="relative flex items-center justify-center w-[220px] h-[220px] md:w-[350px] md:h-[350px] lg:w-[400px] lg:h-[400px] xl:w-[600px] xl:h-[600px] rounded-full"
             style={{
               backgroundImage: 'url("/src/assets/profile-border-bg.jpg")',
               backgroundSize: 'cover',
@@ -48,16 +48,16 @@ export const BioSection = ({ toggleNavbar }) => {
 
           {/* Right Column: Bio Text */}
           <div className="flex-1 text-center md:text-left space-y-6 max-w-lg">
-            <h2 className="text-3xl text-white">
+            <h2 className="text-xl md:text-3xl text-white pt-4">
               I am{' '}
-              <span className="text-[82px] text-white font-hargita">
+              <span className="text-[62px] xl:text-[82px] text-white font-hargita">
                 JULIE JONES
               </span>
             </h2>
             {/* Dynamic Text Content */}
-            <div>
+            <div className={`overflow-hidden ${expanded ? "h-auto" : "h-[200px]"}`}>
               {displayText.map((paragraph, index) => (
-                <p key={index} className="text-lg text-gray-300">
+                <p key={index} className="text-sm xl:text-lg  text-gray-300">
                   {paragraph}
                 </p>
               ))}

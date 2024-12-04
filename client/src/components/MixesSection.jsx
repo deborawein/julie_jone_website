@@ -31,14 +31,14 @@ export const MixesSection = ({ toggleNavbar }) => {
         className="relative flex items-center justify-center h-full w-full z-20"
 
       >
-        <div className='flex flex-row rounded-r-xl rounded-l-full'
+        <div className='flex flex-col lg:flex-row rounded-t-full lg:rounded-r-xl lg:rounded-l-full'
          style={{
           backgroundImage: 'url("/src/assets/profile-square-bg.jpg")',
           backgroundSize: 'contain',
         }}>
           {/* Left Column: Video */}
 
-          <div className="flex items-center justify-center w-[300px] h-[300px] md:w-[500px] md:h-[500px] lg:w-[600px] lg:h-[600px]">
+          <div className="flex items-center justify-center self-center w-[300px] h-[300px] sm:w-[400px] sm:h-[400px] lg:w-[500px] lg:h-[500px] xl:w-[600px] xl:h-[600px]">
             <div className="w-[90%] h-[90%] rounded-full overflow-hidden">
               <video
                 src="/src/assets/jj-video.mp4"
@@ -52,7 +52,7 @@ export const MixesSection = ({ toggleNavbar }) => {
           </div>
 
           {/* Right Column: SoundCloud Embed */}
-          <div className="flex items-center justify-center w-[300px] h-[300px] md:w-[500px] md:h-[500px] lg:w-[600px] lg:h-[600px]">
+          <div className="flex items-center justify-center w-[300px] h-[300px] sm:w-[400px] sm:h-[400px] lg:w-[500px] lg:h-[500px] xl:w-[600px] xl:h-[600px]">
             <div className="w-[90%] h-[90%] rounded-lg overflow-hidden bg-white">
               <iframe
                 width="100%"

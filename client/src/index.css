@@ -19,8 +19,8 @@
 
 
 html {
-    scroll-behavior: smooth;
-  }
+  scroll-behavior: smooth;
+}
   .parallax-bg {
     position: absolute;
     top: 0;
