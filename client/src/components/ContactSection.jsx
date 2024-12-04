@@ -105,24 +105,19 @@ export const ContactSection = ({ toggleNavbar }) => {
               <p className='text-sm'>giuliasantoni.au@gmail.com</p>
             {/* Social Media Icons */}
             <div className="flex justify-center items-center space-x-6 mt-4">
-              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.facebook.com/juliejonesdj" target="_blank" rel="noopener noreferrer">
                 <div className="w-10 h-10 xl:w-14 xl:h-14 bg-green-deep rounded-full flex items-center justify-center hover:bg-[#f57925] transition-all">
                   <FaFacebookF className="w-6 h-6 text-white" />
                 </div>
               </a>
-              <a href="https://soundcloud.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://soundcloud.com/juliejonesdj" target="_blank" rel="noopener noreferrer">
               <div className="w-10 h-10 xl:w-14 xl:h-14 bg-green-deep rounded-full flex items-center justify-center hover:bg-[#f57925] transition-all">
               <FaSoundcloud className="w-6 h-6 text-white" />
                 </div>
               </a>
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.instagram.com/juliejones_dj/" target="_blank" rel="noopener noreferrer">
               <div className="w-10 h-10 xl:w-14 xl:h-14 bg-green-deep rounded-full flex items-center justify-center hover:bg-[#f57925] transition-all">
               <FaInstagram className="w-6 h-6 text-white" />
-                </div>
-              </a>
-              <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
-              <div className="w-10 h-10 xl:w-14 xl:h-14 bg-green-deep rounded-full flex items-center justify-center hover:bg-[#f57925] transition-all">
-              <FaYoutube className="w-6 h-6 text-white" />
                 </div>
               </a>
           </div>
