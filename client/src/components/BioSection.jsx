@@ -29,7 +29,7 @@ export const BioSection = ({ toggleNavbar }) => {
         <div className="container mx-auto px-4 flex flex-col md:flex-row items-center justify-center gap-8 md:gap-16">
           {/* Left Column: Profile Image */}
           <div
-            className="relative flex items-center justify-center w-[220px] h-[220px] md:w-[350px] md:h-[350px] lg:w-[400px] lg:h-[400px] xl:w-[600px] xl:h-[600px] rounded-full"
+            className="relative flex items-center justify-center w-[120px] h-[120px] md:w-[350px] md:h-[350px] lg:w-[400px] lg:h-[400px] xl:w-[600px] xl:h-[600px] rounded-full"
             style={{
               backgroundImage: 'url("/images/profile-border-bg.jpg")',
               backgroundSize: 'cover',
@@ -48,16 +48,16 @@ export const BioSection = ({ toggleNavbar }) => {
 
           {/* Right Column: Bio Text */}
           <div className="flex-1 text-center md:text-left space-y-6 max-w-lg">
-            <h2 className="text-xl md:text-3xl text-white pt-4">
+            <h2 className="text-lg md:text-3xl text-white pt-4">
               I am{' '}
-              <span className="text-[62px] xl:text-[82px] text-white font-hargita">
+              <span className="text-[42px] xl:text-[82px] text-white font-hargita">
                 JULIE JONES
               </span>
             </h2>
             {/* Dynamic Text Content */}
             <div className={`overflow-hidden ${expanded ? "h-auto" : "h-[200px]"}`}>
               {displayText.map((paragraph, index) => (
-                <p key={index} className="text-sm xl:text-lg  text-gray-300">
+                <p key={index} className="text-xs xl:text-lg  text-gray-300">
                   {paragraph}
                 </p>
               ))}

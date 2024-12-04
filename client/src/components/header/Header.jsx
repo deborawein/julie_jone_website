@@ -11,17 +11,17 @@ export const Header = () => {
         <img
           src="/images/julie-white.png"
           alt="JJ Logo"
-          className="aspect-square h-[70px] xl:h-[0] object-contain" // Adjust sizes for mobile
+          className="aspect-square h-[50px] xl:h-[0] object-contain" // Adjust sizes for mobile
         />
         <img
           src="/images/jones-white.png"
           alt="JJ Logo"
-          className="aspect-square h-[70px] xl:h-[0] object-contain" // Adjust sizes for mobile
+          className="aspect-square h-[50px] xl:h-[0] object-contain" // Adjust sizes for mobile
         />
       </motion.div>
 
       {/* Navigation items */}
-      <motion.nav className="flex flex-1 items-center justify-end gap-4 text-sm sm:text-md md:text-lg lg:text-xl xl:gap-20 xl:justify-center">
+      <motion.nav className="flex flex-1 items-center justify-end gap-2 text-sm sm:text-md md:text-lg lg:text-xl xl:gap-20 xl:justify-center">
   {items.map((item) => (
     <motion.a
       whileHover={{ scale: 1.1, color: '#f57925' }}
