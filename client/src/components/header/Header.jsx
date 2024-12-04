@@ -9,12 +9,12 @@ export const Header = () => {
       {/* Left section (Logo or Brand Name if needed) */}
       <motion.div className="flex flex-row text-white text-lg gap-3">
         <img
-          src="/src/assets/julie-white.png"
+          src="/images/julie-white.png"
           alt="JJ Logo"
           className="aspect-square h-[70px] xl:h-[0] object-contain" // Adjust sizes for mobile
         />
         <img
-          src="/src/assets/jones-white.png"
+          src="/images/jones-white.png"
           alt="JJ Logo"
           className="aspect-square h-[70px] xl:h-[0] object-contain" // Adjust sizes for mobile
         />
