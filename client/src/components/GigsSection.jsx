@@ -36,7 +36,7 @@ export const GigsSection = ({ toggleNavbar }) => {
       id="GIGS"
       className="h-screen snap-center bg-[rgb(18,18,18)] text-gray-300 relative py-16 flex flex-col justify-between items-center"
       style={{
-        backgroundImage: 'url("/src/assets/jj-play.jpg")',
+        backgroundImage: 'url("images/jj-play.jpg")',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         loading: 'lazy',

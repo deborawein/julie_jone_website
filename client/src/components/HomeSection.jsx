@@ -20,7 +20,7 @@ export const HomeSection = () => {
     <section
       id="HOME"
       className="h-screen w-full snap-center bg-cover bg-center relative overflow-hidden"
-      style={{ backgroundImage: "url('/src/assets/jj-home.jpg')" }}
+      style={{ backgroundImage: "url('/images/jj-home.jpg')" }}
     >
       <Header />
       {/* Left 50% container with centered logo */}

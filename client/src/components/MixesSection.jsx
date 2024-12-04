@@ -14,7 +14,7 @@ export const MixesSection = ({ toggleNavbar }) => {
 
       {/* Video Background */}
       <video
-        src="/src/assets/jj-video.mp4"
+        src="/images/jj-video.mp4"
         className="absolute top-0 left-0 w-full h-full object-cover z-0"
         autoPlay
         loop
@@ -33,7 +33,7 @@ export const MixesSection = ({ toggleNavbar }) => {
       >
         <div className='flex flex-col lg:flex-row rounded-t-full lg:rounded-r-xl lg:rounded-l-full'
          style={{
-          backgroundImage: 'url("/src/assets/profile-square-bg.jpg")',
+          backgroundImage: 'url("/images/profile-square-bg.jpg")',
           backgroundSize: 'contain',
         }}>
           {/* Left Column: Video */}

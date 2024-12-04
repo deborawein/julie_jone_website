@@ -31,7 +31,7 @@ export const BioSection = ({ toggleNavbar }) => {
           <div
             className="relative flex items-center justify-center w-[220px] h-[220px] md:w-[350px] md:h-[350px] lg:w-[400px] lg:h-[400px] xl:w-[600px] xl:h-[600px] rounded-full"
             style={{
-              backgroundImage: 'url("/src/assets/profile-border-bg.jpg")',
+              backgroundImage: 'url("/images/profile-border-bg.jpg")',
               backgroundSize: 'cover',
               backgroundPosition: 'center',
             }}

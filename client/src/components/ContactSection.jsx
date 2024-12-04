@@ -44,7 +44,7 @@ export const ContactSection = ({ toggleNavbar }) => {
       <div
         className="container mx-auto p-3 rounded-xl flex flex-col md:flex-row items-stretch justify-center mt-[-50px] border-8 border-transparent bg-clip-border"
         style={{
-          backgroundImage: `url('/src/assets/profile-border-bg.jpg')`,
+          backgroundImage: `url('/images/profile-border-bg.jpg')`,
           backgroundSize: 'contain',
           backgroundPosition: 'center',
           borderImage: 'url(/mnt/data/jj-bg-bio.jpg) 30 round',
