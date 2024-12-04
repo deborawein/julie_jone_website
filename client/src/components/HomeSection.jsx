@@ -19,7 +19,7 @@ export const HomeSection = () => {
   return (
     <section
       id="HOME"
-      className="h-screen w-full snap-center bg-cover bg-center relative overflow-hidden"
+      className="h-screen w-full snap-start bg-cover bg-center relative overflow-hidden"
       style={{ backgroundImage: "url('/images/jj-home.jpg')" }}
     >
       <Header />

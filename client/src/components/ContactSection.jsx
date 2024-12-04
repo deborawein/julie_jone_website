@@ -32,7 +32,7 @@ export const ContactSection = ({ toggleNavbar }) => {
   return (
     <section
       id="CONTACT"
-      className="h-screen snap-center bg-[rgb(18,18,18)] text-gray-300 relative py-16 flex flex-col items-center justify-center"
+      className="h-screen snap-start bg-[rgb(18,18,18)] text-gray-300 relative py-16 flex flex-col items-center justify-center"
     >
       {/* Section Header */}
       <div className="absolute top-0 left-0 w-full z-30">

@@ -5,7 +5,7 @@ export const MixesSection = ({ toggleNavbar }) => {
   return (
     <section
       id="MIXES"
-      className="h-screen snap-center bg-[#ecd8b6] text-gray-300 relative"
+      className="h-screen snap-start bg-[#ecd8b6] text-gray-300 relative"
     >
       {/* Section Header */}
       <div className="absolute top-0 left-0 w-full z-30">
